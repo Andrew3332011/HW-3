@@ -1,10 +1,46 @@
-th, td {
-    border: 5px solid rgb(43, 175, 45);
+ td {
+    border: 1px solid rgb(0, 0, 0);
     font-size: 30px;
-    color: blue;
+    color: rgb(0, 0, 0);
     padding: 10px 10px;
 }
 
  table {
-    border-collapse: collapse;
+    border-collapse: collapse; 
+    background-color: rgb(209, 209, 209);
+    width: 1000px;
  }
+
+ thead {
+    background-color: black;
+ }
+
+ th {
+    color: white;
+    padding: 10px 10px;
+ }
+
+ .td {
+    border: 3px solid blue;
+    font-size: 20px;
+
+ }
+
+ .table {
+    border-collapse: collapse;
+    background-color: rgb(252, 252, 156);
+    margin-top: 40px;
+ }
+
+ .thead {
+    background-color: rgb(252, 252, 156);
+
+ }
+
+ .th {
+    color: black;
+    border: 3px solid blue;
+ }
+
+
+ 
