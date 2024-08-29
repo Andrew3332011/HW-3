@@ -126,16 +126,18 @@
     </table>
 
     <table class="table">
-         <thead class="thead">
+        <thead class="thead">
             <tr class="tr">
                 <th class="th">Назва товару</th>
                 <th class="th">Ціна грн</th>
             </tr>
-         </thead>
+        </thead>
 
-         <tbody class="tbody">
-            <span class="yellow"><tr class="tr"></span>
-                <td colspan="2" class="td">Це комірка номер 1 строки 1</td>
+        <tbody class="tbody">
+            <span class="yellow">
+                <tr class="tr">
+            </span>
+            <td colspan="2" class="td">Це комірка номер 1 строки 1</td>
             </tr>
 
             <tr class="tr">
@@ -147,12 +149,251 @@
                 </td>
             </tr>
 
-        <tr class="tr">
-            <td class="td">Всього:</td>
-            <td class="td">500</td>
-        </tr>
-         </tbody>
+            <tr class="tr">
+                <td class="td">Всього:</td>
+                <td class="td">500</td>
+            </tr>
+        </tbody>
     </table>
+
+
+    <!-- <h1>forms</h1> -->
+
+    <form>
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+        <label>
+            Password
+            <input type="password" name="password" />
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <form>
+        <label for="user_email">Email</label>
+        <input type="email" name="email" id="user_email" />
+        <label for="user_password">Password</label>
+        <input type="password" name="password" id="user_password" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <form>
+        <label>
+            Username
+            <input type="text" name="username" placeholder="Jacob Mercer" />
+        </label>
+        <button type="submit">Submit feedback</button>
+    </form>
+
+    <form>
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+        <label>
+            Password
+            <input type="password" name="pwd" minlength="5" maxlength="12" />
+        </label>
+        <label>
+            Phone number
+            <input type="tel" name="phone" />
+        </label>
+        <button type="submit">Register</button>
+    </form>
+
+    <form>
+        <p>Choose a color:</p>
+        <label>
+            <input type="radio" name="color" value="red" />
+            Red
+        </label>
+        <label>
+            <input type="radio" name="color" value="white" checked />
+            White
+        </label>
+        <label>
+            <input type="radio" name="color" value="green" />
+            Green
+        </label>
+
+        <p>Select size:</p>
+        <label>
+            <input type="radio" name="size" value="sm" />
+            Small
+        </label>
+        <label>
+            <input type="radio" name="size" value="md" />
+            Medium
+        </label>
+        <label>
+            <input type="radio" name="size" value="lg" checked />
+            Large
+        </label>
+    </form>
+
+
+    <form>
+        <p>What are your hobbies?</p>
+        <label>
+            <input type="checkbox" name="hobby" value="music" checked />
+            Music
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="sports" checked />
+            Sports
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="reading" />
+            Reading
+        </label>
+    </form>
+
+    <label>
+        Interest rate:
+        <input type="range" name="interest_rate" value="40" min="0" max="100" step="20" />
+    </label>
+
+    <p>Selected value: <span class="js-selected-value">40</span></p>
+
+    <label for="size">Size</label>
+    <select id="size" name="size">
+        <option value="xs">Extra Small</option>
+        <option value="s">Small</option>
+        <option value="m" selected>Medium</option>
+        <option value="l">Large</option>
+    </select>
+
+    <optgroup label="Autumn">
+        <option value="s9">September</option>
+        <option value="s10">October</option>
+        <option value="s11">November</option>
+    </optgroup>
+    </select>
+
+    <label for="fav">Choose your favourite browser</label>
+    <input list="browsers" name="fav" id="fav" />
+
+    <datalist id="browsers">
+        <option>Edge</option>
+        <option>Firefox</option>
+        <option>Chrome</option>
+        <option>Opera</option>
+        <option>Safari</option>
+    </datalist>
+
+    <label for="state">Choose your state</label>
+    <input type="text" name="state" id="state" list="states" />
+    <datalist id="states">
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+    </datalist>
+
+    <form class="form">
+        <fieldset class="form-group">
+            <legend class="group-title">Enter your contact details</legend>
+            <label class="form-label">
+                Name
+                <input type="text" name="username" />
+            </label>
+            <label class="form-label">
+                Email
+                <input type="email" name="email" />
+            </label>
+        </fieldset>
+        <fieldset class="form-group">
+            <legend class="group-title">Your favourite programming language</legend>
+            <div class="form-field">
+                <input type="checkbox" name="language" value="python" id="python">
+                <label class="form-label" for="python">Python</label>
+            </div>
+            <div class="form-field">
+                <input type="checkbox" name="language" value="js" id="js">
+                <label class="form-label" for="js">JavaScript</label>
+            </div>
+            <div class="form-field">
+                <input type="checkb
+  <input type=" checkbox" name="language" value="ruby" id="ruby">
+                <label class="form-label" for="ruby">Python</label>
+            </div>
+        </fieldset>
+
+        <form class="form">
+            <fieldset class="form-group">
+                <legend class="group-title">Enter your contact details</legend>
+                <label class="form-label">
+                    Name
+                    <input type="text" name="username" />
+                </label>
+                <label class="form-label">
+                    Email
+                    <input type="email" name="email" />
+                </label>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend class="group-title">Your favourite programming language</legend>
+                <div class="form-field">
+                    <input type="checkbox" name="language" value="python" id="python">
+                    <label class="form-label" for="python">Python</label>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" name="language" value="js" id="js">
+                    <label class="form-label" for="js">JavaScript</label>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" name="language" value="ruby" id="ruby">
+                    <label class="form-label" for="ruby">Python</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend class="group-title">I want to receive</legend>
+                <div class="form-field">
+                    <input type="checkbox" name="newsletter" value="weekly" id="weekly">
+                    <label class="form-label" for="weekly">The weekly newsletter</label>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" name="newsletter" value="offers" id="offers">
+                    <label class="form-label" for="offers">Offers from the company</label>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" name="newsletter" value="associated_offers" id="associated_offers">
+                    <label class="form-label" for="associated_offers">Offers from associated companies</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Subscribe</button>
+        </form>
+
+        <form action="">
+            <h3>Залишайте свої данні</h3>
+            <label for="name">Name</label>
+            <input id="name" type="text">
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+            <br>
+            <label for="phone">Tel</label>
+            <input placeholder="(xx)xxxxxxxxxx" id="phone" type="tel">
+            <br>
+            <label for="url">SN url</label>
+            <input id="url" type="url">
+            <br>
+            <label for="file">Choose file</label>
+            <input id="file" type="file">
+            <br>
+            <label for="comment">letter</label>
+            <textarea rows="19" cols="100" name="" id="comment"></textarea>
+            <br>
+            <button type="submit">Send</button>
+            <br>
+            <input id="check" type="checkbox">
+            <label for="check">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ipsam blanditiis
+                minus culpa sequi explicabo rem temporibus non nisi?</label>
+        </form>
 </body>
 
 </html>
